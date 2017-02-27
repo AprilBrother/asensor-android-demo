@@ -4,7 +4,7 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothManager;
 import android.content.Context;
-import android.text.TextUtils;
+import android.util.Log;
 
 import java.util.ArrayList;
 
@@ -21,10 +21,9 @@ public class BleManager {
     private BluetoothAdapter.LeScanCallback mLeScanCallback = new BluetoothAdapter.LeScanCallback() {
         @Override
         public void onLeScan(BluetoothDevice device, int rssi, byte[] scanRecord) {
-            if (TextUtils.isEmpty(device.getName()))
+            if (device.getName() != null && !device.getName().contains("asensor"))
                 return;
-            if (!device.getName().contains("asensor"))
-                return;
+            Log.i("BleManager", "onLeScan: ");
             ScanResult result = new ScanResult();
             result.setDevice(device);
             result.setRssi(rssi);

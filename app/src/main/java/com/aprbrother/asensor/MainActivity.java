@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ASensor parseData(BluetoothDevice device, byte[] scanRecord) {
         ASensor asensor = new ASensor();
-        asensor.setName(device.getName());
+        asensor.setName(device.getName()==null?"Unknown":device.getName());
         asensor.setMac(device.getAddress());
         asensor.setTime(System.currentTimeMillis());
         asensor.setTemperature(scanRecord[18] & 0xff);
