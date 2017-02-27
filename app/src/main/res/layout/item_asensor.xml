@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asonsen_7535" />
+
+            <TextView
+                android:id="@+id/mac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="12:34:56:78:90:11" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="last update time:2017-01-01 10:10:10" />
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="temperature : 18℃ " />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="motion state : move " />
+
+        <TextView
+            android:id="@+id/accelerationx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="acceleration X : 10" />
+
+        <TextView
+            android:id="@+id/accelerationy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="acceleration Y : 10" />
+
+        <TextView
+            android:id="@+id/accelerationz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="acceleration Z : 10" />
+
+        <TextView
+            android:id="@+id/measurepower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="measurepower : -59" />
+
+        <TextView
+            android:id="@+id/battery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="battery : 100% " />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
